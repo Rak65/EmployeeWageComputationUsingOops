@@ -10,7 +10,8 @@ namespace EmployeeWageComputationUsingOops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation Program");
+            CheckEmp attendance = new CheckEmp();
+            attendance.EmployeeAttendance();
             Console.ReadKey();
         }
     }
