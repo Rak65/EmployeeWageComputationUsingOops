@@ -8,19 +8,24 @@ namespace EmployeeWageComputationUsingOops
 {
     public class CheckEmp
     {
-        public void EmployeeAttendance()
+        public void DailyEmpWage()
         {
             int IS_FULL_TIME = 1;
+            int dayHour = 0;
+            int dailyEmpWage = 0;
+            int WAGE_PER_HOUR = 20;
             Random random = new Random();
             int empCheck = random.Next(2);
             if (empCheck == IS_FULL_TIME)
             {
-                Console.WriteLine("Employee is Present.");
+                dayHour = 8;
             }
             else
             {
-                Console.WriteLine("Employee is Abscent");
+                dayHour = 0;
             }
+            dailyEmpWage = dayHour * WAGE_PER_HOUR;
+            Console.WriteLine("Daily Employee wage = " + dailyEmpWage);
         }
     }
 }
