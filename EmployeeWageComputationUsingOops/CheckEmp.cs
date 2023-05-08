@@ -8,17 +8,25 @@ namespace EmployeeWageComputationUsingOops
 {
     public class CheckEmp
     {
-        public void DailyEmpWage()
+        public void PartFullEmpWage()
         {
+            //Constant
             int IS_FULL_TIME = 1;
+            int IS_PART_TIME = 2;
+            int WAGE_PER_HOUR = 20;
+            //Variables
             int dayHour = 0;
             int dailyEmpWage = 0;
-            int WAGE_PER_HOUR = 20;
             Random random = new Random();
-            int empCheck = random.Next(2);
+            //computation
+            int empCheck = random.Next(3);
             if (empCheck == IS_FULL_TIME)
             {
                 dayHour = 8;
+            }
+            else if (empCheck == IS_PART_TIME)
+            {
+                dayHour = 4;
             }
             else
             {
