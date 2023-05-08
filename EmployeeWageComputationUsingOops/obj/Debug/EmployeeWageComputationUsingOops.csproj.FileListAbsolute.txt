@@ -1,0 +1,8 @@
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\bin\Debug\EmployeeWageComputationUsingOops.exe.config
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\bin\Debug\EmployeeWageComputationUsingOops.exe
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\bin\Debug\EmployeeWageComputationUsingOops.pdb
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\obj\Debug\EmployeeWageComputationUsingOops.csproj.AssemblyReference.cache
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\obj\Debug\EmployeeWageComputationUsingOops.csproj.SuggestedBindingRedirects.cache
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\obj\Debug\EmployeeWageComputationUsingOops.csproj.CoreCompileInputs.cache
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\obj\Debug\EmployeeWageComputationUsingOops.exe
+H:\C# Project\EmployeeWageComputationUsingOops\EmployeeWageComputationUsingOops\obj\Debug\EmployeeWageComputationUsingOops.pdb
