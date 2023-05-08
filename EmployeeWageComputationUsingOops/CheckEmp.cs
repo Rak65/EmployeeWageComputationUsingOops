@@ -9,19 +9,20 @@ namespace EmployeeWageComputationUsingOops
 {
     public class CheckEmp
     {
-        //Constant
+        //constant
         const int IS_FUL_TIME = 1;
         const int IS_PART_TIME = 2;
         const int NO_OF_WORKING_DAYS = 20;        //20 working days per month
         const int EMP_RATE_PER_HOUR = 20;
+        const int MAX_WORKING_HOUR = 100;
         public void MonthEmpWage()
         {
             //variable
             int dayHour = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
+            int totalHours = 0;
+            int totalWorkingDays = 0;
             //computation
-            for (int day = 0; day < NO_OF_WORKING_DAYS; day++)
+            while (totalHours < MAX_WORKING_HOUR && totalWorkingDays < NO_OF_WORKING_DAYS)
             {
                 Random random = new Random();
                 int empCheck = random.Next(3);
@@ -38,10 +39,11 @@ namespace EmployeeWageComputationUsingOops
                         break;
 
                 }
-                empWage = dayHour * EMP_RATE_PER_HOUR;
-                Console.WriteLine("Employee wage = " + empWage);
-                totalEmpWage += empWage;
+                totalHours += dayHour;
+                totalWorkingDays++;
+                Console.WriteLine("Day# " + totalWorkingDays + " Employee hours = " + dayHour);
             }
+            int totalEmpWage = totalHours * EMP_RATE_PER_HOUR;
             Console.WriteLine("Total Employee wage = " + totalEmpWage);
 
         }
