@@ -15,7 +15,7 @@ namespace EmployeeWageComputationUsingOops
         const int NO_OF_WORKING_DAYS = 20;        //20 working days per month
         const int EMP_RATE_PER_HOUR = 20;
         const int MAX_WORKING_HOUR = 100;
-        public void MonthEmpWage()
+        public int ComputeEmpWage()
         {
             //variable
             int dayHour = 0;
@@ -45,7 +45,7 @@ namespace EmployeeWageComputationUsingOops
             }
             int totalEmpWage = totalHours * EMP_RATE_PER_HOUR;
             Console.WriteLine("Total Employee wage = " + totalEmpWage);
-
+            return totalEmpWage;
         }
     }
 }

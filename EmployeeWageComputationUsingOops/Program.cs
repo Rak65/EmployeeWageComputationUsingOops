@@ -11,7 +11,7 @@ namespace EmployeeWageComputationUsingOops
         static void Main(string[] args)
         {
             CheckEmp empWage = new CheckEmp();
-            empWage.MonthEmpWage();
+            empWage.ComputeEmpWage();
             Console.ReadKey();
         }
     }
