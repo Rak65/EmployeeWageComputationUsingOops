@@ -10,32 +10,40 @@ namespace EmployeeWageComputationUsingOops
     public class CheckEmp
     {
         //Constant
-        public const int IS_FULL_TIME = 1;
-        public const int IS_PART_TIME = 2;
-        public const int WAGE_PER_HOUR = 20;
-        public void PartFullEmpWage()
+        const int IS_FUL_TIME = 1;
+        const int IS_PART_TIME = 2;
+        const int NO_OF_WORKING_DAYS = 20;        //20 working days per month
+        const int EMP_RATE_PER_HOUR = 20;
+        public void MonthEmpWage()
         {
-            //Variables
+            //variable
             int dayHour = 0;
-            int dailyEmpWage = 0;
-            Random random = new Random();
+            int empWage = 0;
+            int totalEmpWage = 0;
             //computation
-            int empCheck = random.Next(3);
-            switch (empCheck)
+            for (int day = 0; day < NO_OF_WORKING_DAYS; day++)
             {
-                case IS_FULL_TIME :
-                    dayHour = 8;
-                    break;
-                case IS_PART_TIME :
-                    dayHour = 4;
-                    break;
-                default :
-                    dayHour = 0;
-                    break;
+                Random random = new Random();
+                int empCheck = random.Next(3);
+                switch (empCheck)
+                {
+                    case IS_FUL_TIME:
+                        dayHour = 8;
+                        break;
+                    case IS_PART_TIME:
+                        dayHour = 4;
+                        break;
+                    default:
+                        dayHour = 0;
+                        break;
 
+                }
+                empWage = dayHour * EMP_RATE_PER_HOUR;
+                Console.WriteLine("Employee wage = " + empWage);
+                totalEmpWage += empWage;
             }
-            dailyEmpWage = dayHour * WAGE_PER_HOUR;
-            Console.WriteLine("Daily Employee wage = " + dailyEmpWage);
+            Console.WriteLine("Total Employee wage = " + totalEmpWage);
+
         }
     }
 }
