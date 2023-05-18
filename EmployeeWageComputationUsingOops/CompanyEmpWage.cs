@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EmployeeWageComputationUsingOops
-{
+{ 
     public class CompanyEmpWage
     { 
         private string company;

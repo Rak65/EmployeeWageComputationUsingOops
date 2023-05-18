@@ -11,8 +11,9 @@ namespace EmployeeWageComputationUsingOops
         public static void Main(string[] args)
         {
             EmpWageBuilderArray empWageBuilderArray = new EmpWageBuilderArray();
-            empWageBuilderArray .addCompanyEmpWage("DMart", 20, 2, 10);
-            empWageBuilderArray .addCompanyEmpWage("Reliance", 10, 4, 20);
+            empWageBuilderArray.addCompanyEmpWage("DMart", 20, 20, 10);
+            empWageBuilderArray.addCompanyEmpWage("Reliance", 20, 19, 10);
+            empWageBuilderArray.computeEmpWage();
             Console.ReadKey(); ;
         }
     }
